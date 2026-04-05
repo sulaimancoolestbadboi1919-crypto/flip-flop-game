@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlipFlop – Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── BACKGROUND ── -->
+  <div class="bg-layer"></div>
+  <div class="stars">
+    <span class="star">⭐</span>
+    <span class="star">🌟</span>
+    <span class="star">✨</span>
+    <span class="star">⭐</span>
+    <span class="star">🌟</span>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SCREEN 1 – START
+  ══════════════════════════════════════ -->
+  <div class="screen" id="startScreen">
+
+    <!-- Decorative side buttons -->
+    <div class="side-buttons left">
+      <button class="side-btn s-settings" title="Settings">⚙️</button>
+      <button class="side-btn s-sound"    title="Sound"   >🔊</button>
+      <button class="side-btn s-info"     title="Info"    >ℹ️</button>
+    </div>
+    <div class="side-buttons right">
+      <button class="side-btn s-theme" title="Theme">🎨</button>
+      <button class="side-btn s-more"  title="More" >🎮</button>
+    </div>
+
+    <!-- Main content -->
+    <div class="start-content">
+      <h1 class="title">FLIP<br>FLOP</h1>
+      <p class="subtitle">Memory Challenge</p>
+      <button class="play-btn" id="playBtn">▶ PLAY</button>
+    </div>
+
+    <!-- Bottom strip -->
+    <div class="bottom-btns">
+      <button class="ghost-btn reset-btn">Reset</button>
+      <button class="ghost-btn remove-btn">Remove Ads</button>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════
+       POPUP – MODE SELECTION
+  ══════════════════════════════════════ -->
+  <div class="overlay" id="modeOverlay">
+    <div class="popup-box mode-popup">
+      <button class="close-x" id="modeCloseBtn">✖</button>
+      <h2>SELECT MODE</h2>
+      <div class="mode-buttons">
+        <button class="mode-btn mode-easy"   data-mode="easy"  >🟢 EASY</button>
+        <button class="mode-btn mode-medium" data-mode="medium">🔵 MEDIUM</button>
+        <button class="mode-btn mode-hard"   data-mode="hard"  >🟣 HARD</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       SCREEN 2 – GAME
+  ══════════════════════════════════════ -->
+  <div class="screen hidden" id="gameScreen">
+
+    <!-- Header -->
+    <div class="game-header">
+      <div class="header-left">
+        <button class="back-btn" id="backBtn">← MENU</button>
+        <span class="game-title-sm">FLIP<span class="title-accent">FLOP</span></span>
+        <span class="diff-badge" id="diffBadge">EASY</span>
+      </div>
+      <div class="stat-row">
+        <div class="stat-pill">
+          <span class="icon">🕹️</span>
+          <span>Moves</span>
+          <span class="stat-val" id="movesCounter">0</span>
+        </div>
+        <div class="stat-pill">
+          <span class="icon">⏱️</span>
+          <span>Time</span>
+          <span class="stat-val" id="timerDisplay">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card grid -->
+    <div class="game-grid" id="gameGrid"></div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════
+       POPUP – WIN / GAME COMPLETE
+  ══════════════════════════════════════ -->
+  <div class="overlay" id="winOverlay">
+    <div class="popup-box win-popup">
+      <div class="win-emoji">🏆</div>
+      <h2 class="win-title">YOU WON!</h2>
+      <p class="win-sub">Amazing memory skills!</p>
+
+      <div class="win-stats">
+        <div class="win-stat">
+          <span class="ws-label">Moves</span>
+          <span class="ws-val" id="finalMoves">0</span>
+        </div>
+        <div class="win-stat">
+          <span class="ws-label">Time</span>
+          <span class="ws-val" id="finalTime">0:00</span>
+        </div>
+      </div>
+
+      <div class="new-hs" id="newHighscoreRow">🎉 NEW HIGHSCORE!</div>
+
+      <div class="win-btns">
+        <button class="win-btn primary"   id="playAgainBtn">▶ PLAY AGAIN</button>
+        <button class="win-btn secondary" id="menuBtn"     >🏠 MENU</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti layer -->
+  <div class="confetti-wrap hidden" id="confettiWrap"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>

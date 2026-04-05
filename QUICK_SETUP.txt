@@ -1,0 +1,53 @@
+# MongoDB Setup - QUICK & EASY
+
+## 1️⃣ Install MongoDB (Choose ONE)
+
+**Option A - Local MongoDB (Easiest for testing)**
+- Download: https://www.mongodb.com/try/download/community
+- Install and it runs automatically
+- That's it!
+
+**Option B - MongoDB Atlas (Cloud - Better for production)**
+- Go to: https://www.mongodb.com/cloud/atlas
+- Create free account → Create cluster → Get connection string
+
+## 2️⃣ Update .env File
+
+Open `.env` and set your connection:
+
+```
+# For LOCAL MongoDB:
+MONGODB_URI=mongodb://localhost:27017/flipflop
+
+# For ATLAS (Cloud):
+# MONGODB_URI=mongodb+srv://yourname:password@cluster.mongodb.net/flipflop
+```
+
+## 3️⃣ START SERVER
+
+```bash
+npm start
+```
+
+**You should see:**
+```
+✅ MongoDB Connected
+🎮 FlipFlop Backend running on http://localhost:3000
+```
+
+If MongoDB isn't running, it will show a warning and still work in memory mode.
+
+## 4️⃣ Done!
+
+Your game scores automatically save to MongoDB now! 🎉
+
+## Troubleshooting
+
+**"MongoDB Connection Error"?**
+- Make sure MongoDB is actually running
+- Check connection string in .env is correct
+- For local: install MongoDB from the link above
+
+**Still not working?**
+- Just run the server anyway - it works without MongoDB
+- Scores save to memory (lost on restart)

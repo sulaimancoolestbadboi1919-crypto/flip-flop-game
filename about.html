@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – FlipFlop Memory Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── BACKGROUND ── -->
+  <div class="bg-layer"></div>
+  <div class="stars">
+    <span class="star">⭐</span>
+    <span class="star">🌟</span>
+    <span class="star">✨</span>
+    <span class="star">⭐</span>
+    <span class="star">🌟</span>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ABOUT SCREEN
+  ══════════════════════════════════════ -->
+  <div class="about-screen">
+
+    <!-- Back Button -->
+    <button class="about-back-btn" id="aboutBackBtn">← BACK</button>
+
+    <!-- Main Content -->
+    <div class="about-container">
+      
+      <!-- Header Section -->
+      <div class="about-header">
+        <div class="logo-box">
+          <h1 class="about-title">FLIPFLOP</h1>
+        </div>
+        <p class="about-tagline">Memory Challenge Game</p>
+        <p class="about-version">Version 1.0</p>
+      </div>
+
+      <!-- About Section -->
+      <div class="about-card">
+        <div class="card-header">
+          <span class="card-icon">🎮</span>
+          <h2>About The Game</h2>
+        </div>
+        <p class="card-content">
+          FlipFlop is a professionally designed memory challenge game that sharpens your cognitive abilities. 
+          Test your memory skills by finding matching pairs across three difficulty levels. Track your progress, 
+          beat your personal records, and compete for the highest scores.
+        </p>
+      </div>
+
+      <!-- How to Play Section -->
+      <div class="about-card">
+        <div class="card-header">
+          <span class="card-icon">🎯</span>
+          <h2>How To Play</h2>
+        </div>
+        <div class="card-content">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-circle">1</div>
+              </div>
+              <div class="timeline-content">
+                <h4>Start a Game</h4>
+                <p>Click the <strong>PLAY</strong> button on the main menu to begin a new game session</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-circle">2</div>
+              </div>
+              <div class="timeline-content">
+                <h4>Choose Difficulty</h4>
+                <p>Select your preferred difficulty level: <strong>Easy</strong> (16 cards), <strong>Medium</strong> (20 cards), or <strong>Hard</strong> (30 cards)</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-circle">3</div>
+              </div>
+              <div class="timeline-content">
+                <h4>Flip Cards</h4>
+                <p>Click on any card to flip it and reveal the hidden emoji. Try to memorize the positions as you go</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker">
+                <div class="marker-circle">4</div>
+              </div>
+              <div class="timeline-content">
+                <h4>Match Pairs</h4>
+                <p>Find all matching pairs by flipping two cards with the same emoji. Successfully matched pairs stay revealed</p>
+              </div>
+            </div>
+
+            <div class="timeline-item timeline-item-last">
+              <div class="timeline-marker">
+                <div class="marker-circle">5</div>
+              </div>
+              <div class="timeline-content">
+                <h4>Maximize Your Score</h4>
+                <p>Complete the level with the fewest moves and lowest time to achieve the best score and unlock achievements</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Features Section -->
+      <div class="about-card">
+        <div class="card-header">
+          <span class="card-icon">✨</span>
+          <h2>Game Features</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="feature-icon">🟢</span>
+            <div>
+              <h4>Multiple Difficulties</h4>
+              <p>Easy, Medium, and Hard modes for all skill levels</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">⏱️</span>
+            <div>
+              <h4>Time Tracking</h4>
+              <p>Real-time timer and personal best records</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🕹️</span>
+            <div>
+              <h4>Move Counter</h4>
+              <p>Track and optimize your move efficiency</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🎨</span>
+            <div>
+              <h4>Beautiful UI</h4>
+              <p>Smooth animations and stunning visuals</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🎵</span>
+            <div>
+              <h4>Sound Effects</h4>
+              <p>Immersive audio feedback and transitions</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🏆</span>
+            <div>
+              <h4>Achievements</h4>
+              <p>Compete for high scores and milestones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Modes Section -->
+      <div class="about-card">
+        <div class="card-header">
+          <span class="card-icon">🎮</span>
+          <h2>Game Modes</h2>
+        </div>
+        <div class="modes-grid">
+          <div class="mode-box easy-mode">
+            <h4>🟢 Easy</h4>
+            <p>4×4 Grid (16 Cards)</p>
+            <span class="mode-info">Perfect for beginners</span>
+          </div>
+          <div class="mode-box medium-mode">
+            <h4>🔵 Medium</h4>
+            <p>4×5 Grid (20 Cards)</p>
+            <span class="mode-info">Balanced challenge</span>
+          </div>
+          <div class="mode-box hard-mode">
+            <h4>🟣 Hard</h4>
+            <p>5×6 Grid (30 Cards)</p>
+            <span class="mode-info">For veterans</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <div class="about-footer-section">
+        <p class="footer-text">© 2026 FlipFlop - Memory Challenge</p>
+        <p class="footer-text-sub">Developed with creativity and precision</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Navigate back to home
+    document.addEventListener('DOMContentLoaded', function() {
+      const backBtn = document.getElementById('aboutBackBtn');
+      if (backBtn) {
+        backBtn.addEventListener('click', function() {
+          window.location.href = 'index.html';
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
